@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>k-means</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src='http://d3js.org/d3.v2.js'></script>
+    <div class="w-75 m-auto">
+        <div class="input-group">
+            <input type="number" class="form-control" id="count_dots" placeholder="Кількість точок">
+            <input type="number" class="form-control" id="count_cluster" placeholder="Кількість кластерів">
+            <input type="number" class="form-control" id="deviation_cluster" placeholder="Відхилення кластерів">
+            <button class="btn btn-primary" type="button" onclick="start()">Побудувати</button>
+        </div>
+    </div>
+    <div id="kmeans" class="w-100">
+        <svg class="m-auto" id="block"></svg>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
